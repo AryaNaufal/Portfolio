@@ -1,0 +1,12 @@
+---
+interface Props {
+  value: string;
+  style: string;
+}
+
+const { value, style } = Astro.props;
+---
+
+<button class=`text-white font-semibold ${style}`>
+  {value}
+</button>
