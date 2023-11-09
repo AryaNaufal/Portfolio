@@ -10,9 +10,12 @@ import Button from "../Elements/Button.astro";
     <div
       class="flex w-full font-bold text-xs text-white sm:text-lg lg:w-auto justify-between"
     >
-      <a class="hover:text-[#ff7e33] hover:duration-[.2s]">Arya Naufal</a>
+      <a
+        class="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-orange"
+        >Arya Naufal</a
+      >
       <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 text-orange-600" />
+        <MenuIcon class="w-4 h-4 text-orange" />
       </div>
     </div>
     <MenuItems class="hidden lg:flex">
@@ -21,12 +24,18 @@ import Button from "../Elements/Button.astro";
       >
         <li>
           <a href="/">
-            <Button value="Home" style="hover:border-b-4 hover:transition-all hover:duration-75 border-b-[#ff7e33]" />
+            <Button
+              value="Home"
+              style="hover:border-b-4 hover:transition-all hover:duration-75 border-b-orange"
+            />
           </a>
         </li>
         <li>
           <a href="/">
-            <Button value="About" style="hover:border-b-4 hover:transition-all hover:duration-75 border-b-[#ff7e33]" />
+            <Button
+              value="About"
+              style="hover:border-b-4 hover:transition-all hover:duration-75 border-b-orange"
+            />
           </a>
         </li>
       </ul>
