@@ -5,8 +5,8 @@ export default {
 		extend: {
       colors: {
         'orange': '#FF7E33',
-        
-      }
+        'main-background': '#2A233E'
+      },
     },
 	},
 	plugins: [],
