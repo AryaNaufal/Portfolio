@@ -1,0 +1,12 @@
+---
+interface Props {
+  value: string;
+  modify?: string;
+}
+
+const { value, modify }: any = Astro.props;
+---
+
+<div>
+  <a href="" class=`font-semibold ${modify}`>{value}</a>
+</div>

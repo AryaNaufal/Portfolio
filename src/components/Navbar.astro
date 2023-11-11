@@ -1,9 +1,10 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Button from "./Elements/Button.astro";
 ---
 
 <header
-  class="text-white font-bold fixed w-full lg:flex justify-between items-center py-5 px-10 gap-5 mx-auto shadow-lg"
+  class="text-white z-50 font-bold fixed w-full lg:flex justify-between items-center py-5 px-10 gap-5 mx-auto shadow-lg bg-main-background"
 >
   <Astronav closeOnClick>
     <div
@@ -25,20 +26,16 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
         class="flex flex-col pt-5 lg:flex-row lg:gap-5 lg:items-center lg:p-0"
       >
         <li>
-          <a
-            href="/"
-            class="hover:border-b-4 hover:transition-all hover:duration-75 border-b-orange"
-          >
-            Home
-          </a>
+          <Button
+            value="Home"
+            modify="hover:border-b-4 hover:transition-all hover:duration-75 border-b-orange"
+          />
         </li>
         <li>
-          <a
-            href="/"
-            class="hover:border-b-4 hover:transition-all hover:duration-75 border-b-orange"
-          >
-            About
-          </a>
+          <Button
+            value="About"
+            modify="hover:border-b-4 hover:transition-all hover:duration-75 border-b-orange"
+          />
         </li>
       </ul>
     </MenuItems>

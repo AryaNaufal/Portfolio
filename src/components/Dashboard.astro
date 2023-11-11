@@ -1,10 +1,5 @@
 ---
-interface Button {
-  value: string;
-  style: string;
-}
-
-const { Button }: any = Astro.props;
+import Button from "./Elements/Button.astro";
 ---
 
 <div
@@ -17,13 +12,13 @@ const { Button }: any = Astro.props;
       class="w-full h-full object-cover rounded-full"
     />
   </div>
-  <div class="flex flex-col gap-y-1 items-start">
+  <div class="flex flex-col gap-y-5 items-start">
     <h1 class="font-bold text-2xl sm:text-4xl md:text-5xl">
       Hello I'm Arya Naufal
     </h1>
     <h3 class="font-semibold text-lg sm:text-xl lg:text-3xl">
       Welcome to my portfolio
     </h3>
-    <a href="" class="bg-orange font-semibold p-2 rounded"> Download CV</a>
+    <Button value="Download CV" modify="bg-orange p-2 rounded"/>
   </div>
 </div>
