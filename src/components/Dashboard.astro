@@ -2,23 +2,25 @@
 import Button from "./Elements/Button.astro";
 ---
 
-<div
-  class="flex flex-col gap-y-10 justify-center items-center h-screen w-full text-white sm:flex-row sm:gap-x-5 sm:px-14 lg:gap-x-40"
->
-  <div class="w-48 h-48 sm:w-72 sm:h-60 lg:h-72 rounded-full sm:order-1">
-    <img
-      src="https://placehold.co/600x400"
-      alt="Ini Foto"
-      class="w-full h-full object-cover rounded-full"
-    />
+<section>
+  <div
+    class="flex flex-col gap-y-10 justify-center items-center h-screen w-full text-white sm:flex-row sm:gap-x-5 sm:px-14 lg:gap-x-40"
+  >
+    <div class="w-48 h-48 sm:w-72 sm:h-60 lg:h-72 rounded-full sm:order-1">
+      <img
+        src="https://placehold.co/600x400"
+        alt="Ini Foto"
+        class="w-full h-full object-cover rounded-full"
+      />
+    </div>
+    <div class="flex flex-col gap-y-5 items-start">
+      <h1 class="font-bold text-2xl sm:text-4xl md:text-5xl">
+        Hello I'm Arya Naufal
+      </h1>
+      <h3 class="font-semibold text-lg sm:text-xl lg:text-3xl">
+        Welcome to my portfolio
+      </h3>
+      <Button value="Download CV" modify="bg-orange p-2 rounded" />
+    </div>
   </div>
-  <div class="flex flex-col gap-y-5 items-start">
-    <h1 class="font-bold text-2xl sm:text-4xl md:text-5xl">
-      Hello I'm Arya Naufal
-    </h1>
-    <h3 class="font-semibold text-lg sm:text-xl lg:text-3xl">
-      Welcome to my portfolio
-    </h3>
-    <Button value="Download CV" modify="bg-orange p-2 rounded"/>
-  </div>
-</div>
+</section>
